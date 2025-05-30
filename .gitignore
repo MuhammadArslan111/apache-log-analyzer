@@ -116,6 +116,12 @@ dist
 # Serverless directories
 .serverless/
 
+server
+node_modules
+public
+src
+venv
+
 # FuseBox cache
 .fusebox/
 
