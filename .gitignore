@@ -99,7 +99,8 @@ dist
 .firebase
 # vuepress build output
 .vuepress/dist
-
+firebase.json
+.firebaserc
 # vuepress v2.x temp and cache directory
 .temp
 .cache

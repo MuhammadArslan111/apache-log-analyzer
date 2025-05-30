@@ -125,7 +125,7 @@ echo "Enter the number of log entries to generate:"
 read NUM_LOGS
 
 echo "Generating logs for period: $START_DATETIME to $END_DATETIME..."
-LOG_FILE="public/custom_logs_$(date +%Y%m%d_%H%M%S).log"
+LOG_FILE="custom_logs_$(date +%Y%m%d_%H%M%S).log"
 
 # Progress counter
 progress=0
