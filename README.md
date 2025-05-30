@@ -23,6 +23,8 @@
 
 ## 🚀 Installation Guide
 
+##Note: Please activate you python virtual environment before executing `start.sh` file
+
 ### Prerequisites
 Before you begin, ensure you have the following installed:
 
