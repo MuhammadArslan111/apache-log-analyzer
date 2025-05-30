@@ -1,0 +1,140 @@
+/* Adding Tailwind CSS base configurations */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Adding custom base styles */
+@layer base {
+  /* Adding default background color to body */
+  body {
+    @apply bg-gray-50;
+  }
+}
+/* Adding custom component styles */
+@layer components {
+  /* Adding base button styles */
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-colors duration-200;
+  }
+  /* Adding primary button variant */
+  .btn-primary {
+    @apply bg-blue-500 text-white hover:bg-blue-600;
+  }
+  /* Adding secondary button variant */
+  .btn-secondary {
+    @apply bg-gray-200 text-gray-800 hover:bg-gray-300;
+  }
+  /* Adding input field styles */
+  .input {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500;
+  }
+  /* Adding card container styles */
+  .card {
+    @apply bg-white rounded-lg shadow-lg p-6;
+  }
+}
+
+/* Adding toast notification customization */
+.Toastify__toast {
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+/* Adding success toast styles */
+.Toastify__toast--success {
+  background: #DEF7EC;
+  color: #03543F;
+}
+/* Adding error toast styles */
+.Toastify__toast--error {
+  background: #FDE8E8;
+  color: #9B1C1C;
+}
+/* Adding info toast styles */
+.Toastify__toast--info {
+  background: #E1EFFE;
+  color: #1E429F;
+}
+/* Adding warning toast styles */
+.Toastify__toast--warning {
+  background: #FDF6B2;
+  color: #8E4B10;
+}
+/* Adding toast progress bar styles */
+.Toastify__progress-bar {
+  height: 4px;
+  border-radius: 2px;
+}
+
+/* Adding animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Adding fade-in animation class */
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+/* Adding float animation class */
+.animate-float {
+  animation: float 15s ease-in-out infinite;
+}
+/* Adding shimmer animation class */
+.animate-shimmer {
+  animation: shimmer 3s linear infinite;
+}
+/* Adding gradient animation class */
+.animate-gradient {
+  animation: gradient-x 15s ease infinite;
+}
+/* Adding gentle bounce animation keyframes */
+@keyframes bounce-gentle {
+  0%, 100% {
+    transform: translateY(0);
+    filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04));
+  }
+  50% {
+    transform: translateY(-10px);
+    filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.08));
+  }
+}
+/* Adding gentle bounce animation class */
+.animate-bounce-gentle {
+  animation: bounce-gentle 3s ease-in-out infinite;
+}
+/* Adding progress animation keyframes */
+@keyframes progress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* Adding DatePicker customization */
+.react-datepicker {
+  @apply border-0 shadow-none font-sans;
+}
+/* Adding DatePicker header styles */
+.react-datepicker__header {
+  @apply bg-white border-0;
+}
+/* Adding DatePicker day styles */
+.react-datepicker__day {
+  @apply hover:bg-blue-50 rounded-lg transition-colors;
+}
+/* Adding DatePicker selected day styles */
+.react-datepicker__day--selected {
+  @apply bg-blue-500 text-white hover:bg-blue-600;
+}
+/* Adding DatePicker keyboard selected day styles */
+.react-datepicker__day--keyboard-selected {
+  @apply bg-blue-100 text-blue-600 hover:bg-blue-200;
+}
